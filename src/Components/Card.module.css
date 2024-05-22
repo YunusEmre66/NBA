@@ -1,0 +1,24 @@
+.card {
+  display: flex;
+  background-color: white;
+  color: black;
+  text-align: center;
+  border: 2px solid blue;
+  margin: 5px;
+  justify-content: center;
+  border-radius: 12px;
+  height: 350px;
+  width: 100%;
+}
+img {
+  border-radius: 10px;
+}
+/* .static{
+    height: 100%;
+} */
+/* #imageCard{
+    width: 100%;
+    border-radius: 10px;
+    background-color: red;
+
+} */

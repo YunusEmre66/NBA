@@ -1,0 +1,18 @@
+.background {
+  background-image: url(../Helpers/los-angeles-laker-great-jerry-west-thinks-michael-jordan-would-wonderful-as-nba-logo----image.png);
+  width: 100%;
+  border-radius: 10px;
+  background: linear-gradient(
+    to left,
+    #0abfbc,
+    #fc354c
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+body {
+  background: linear-gradient(
+    to right,
+    #ffe000,
+    #799f0c,
+    #00416a
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}

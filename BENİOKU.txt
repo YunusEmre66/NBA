@@ -1,0 +1,50 @@
+NBA 
+
+windows + nokta tuşu emojileri açar
+list-unstyled siyah noktalar gidiyor
+variant="top" 
+role='button'
+rounded-2 , rounded-circle
+g-3 gap
+
+
+********onChange={(e) => setSearch(e.target.value)}  /! burada inputa veya forma girilen değeri yakalıyor. onchange={handleonchange} şeklindede yapabiliriz.
+
+
+     <Row>
+          {data
+            .filter((player) =>
+              player.name.toLowerCase().includes(search.trim().toLowerCase())
+            )
+            .map((player, i) => {
+              return (
+                <Col md={6} lg={6} xl={3} key={i}className="bg-danger-subtle">
+                  <PlayerCard {...player}/>
+                
+                </Col>
+              );
+            })}
+        </Row>
+
+
+ .filter() yöntemi, data dizisini döngüye alır ve her oyuncuyu alır. Ardından,
+  oyuncunun adının küçük harfe dönüştürülmüş hali, arama ifadesinin küçük harfe 
+  dönüştürülmüş haliyle eşleşiyorsa, bu oyuncuyu filtreler. Böylece,
+   arama kriterini karşılayan oyuncuları elde ederiz.
+
+.map() yöntemi, filtrelenen oyuncu dizisini döngüye alır ve her oyuncu için bir 
+<Col> bileşeni oluşturur. <Col>, Bootstrap'in sütunlarını temsil eder ve bir grid sistemi oluşturur.
+
+
+md={6}, lg={6}, xl={3} özellikleri, sırasıyla orta boy, büyük ve ekstra büyük 
+boyutlarda sütun genişliğini belirtir. Bu özellikler, sütunun ne kadar geniş 
+olacağını belirler.
+
+key={i} özelliği, her sütun için benzersiz bir anahtar değeri sağlar. 
+Bu, React'in etkinlikleri izlemesine ve sütunları daha verimli bir 
+şekilde güncellemesine yardımcı olur.
+
+******const [showImage, setshowImage] = useState(true);
+onclick={()=> setshowımage(!showımage)} /! tıklandığında showımage in durumunu tersle demek oluyor ! işareti
+
+****<Form.control/> deriz ama sadece form u import ederiz. formun içinde control de olduğu için onu alır      
